@@ -6,9 +6,9 @@ def initialize (name)
     # @song = []
   end
 
-def add_song_by_name (name)
+def add_song_by_name(name)
   song = Song.new(name, self)
-  end
+end
 
 def songs
   Song.all.select { |song| song.artist == self}
